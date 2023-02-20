@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <h1 style="color: purple;font-size: 40px;font-family: cursive;text-align: center;">Payment Details</h1>
+<div class="row">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter Name" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email Address" >
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Enter City" >
+
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>  
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="State">
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-50">
+            
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder=" Name on Card" >
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" >
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Month" >
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="yyyy">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="nnn">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </form>
+      <a href="thank.html">  
+        <button class="d">submit</button>  
+      </a>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>

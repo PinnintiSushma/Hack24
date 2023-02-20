@@ -1,0 +1,124 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 0;
+    overflow: hidden;
+    background-color: brown;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  .body{
+   background-image: url("SEA.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .image{
+    width: 400px;
+    height: 400px;
+    padding-left: 50px;
+    border-radius: 10px;
+    
+  }
+  .fle{
+    display: inline-flex;
+  }
+  .quote{
+    padding-left: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 73px;
+  }
+  .features{
+    display: inline-flex;
+    width: 1400px;
+    padding-left: 20px;
+  }
+  .fea{
+    font-size: 35px;
+    color: rgb(72, 1, 80);
+    padding-left: 35px;
+  }
+  .had{
+    font-size: 50px;
+    color: darkblue;
+  }
+  .txt1{
+    color: #6f0303;
+    font-size: 25px;
+  }
+  .ing{
+    color: rgb(1, 62, 2);
+  }
+  hr{
+   margin-left: 50px;
+    margin-right: 50px;
+  }
+  .tab{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 20px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  #fish{
+    background-image: url("fish2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .co{
+    background-color:rgba(213, 95, 95, 0.542);
+}
+.navigation3 a{
+    color:rgb(26, 25, 25);
+    text-decoration: none;
+   font-size: 18px;
+   padding-left: 50px;
+}
+.media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.media-icons a{
+    position :relative;
+    color:rgb(13, 13, 13);
+    font-size: 35px;
+    transition: 0.3s;
+    
+    transition-property: transform;
+}
+
+.media-icons a:not(:last-child){
+    margin-right: 15px;
+}
+
+.media-icons a:hover{
+    transform:scale(1.5);
+}

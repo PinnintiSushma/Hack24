@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            width: 300px;
+            cursor: pointer;
+            padding: 50px;
+            color: white;
+            border-radius: 15px;
+            background-color: #172d13;
+            margin: 100px;
+            margin-bottom: 30px;
+            margin-right: 130px;
+            margin-left: 260px;
+            margin-top: 40px;
+            font-family: cursive, sans;
+        }
+        .c1{
+            font-size: 24px;
+            text-align: center;
+            height: 130px;
+            width: 300px;
+            border-radius: 15px;
+            background-color: #172d13;
+            color: white;
+        }
+
+        .button:hover,.c1:hover {
+            text-decoration: wavy;
+        }
+
+        .button:active,.c1:active {
+            background-color: darksalmon;
+            box-shadow: 0 5px rgb(136, 130, 130);
+            transform: translateY(55px);
+
+        }
+
+        .button ,.c1{
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            text-decoration: wavy;
+        }
+
+        .button :after,.c1:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover,.c1:hover {
+            padding-right: 25px;
+        }
+
+        .button:hover:after,.c1:hover:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        body {
+            background-image: url("SEAFOOD.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .sidepanel {
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            height: 30%;
+            top: 0;
+            left: 0;
+            background-color: rgb(239, 229, 229);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidepanel a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #060606;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidepanel a:hover {
+            color: #e01313;
+        }
+
+        .sidepanel .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+        }
+    </style>
+    <script>
+        function fun() {
+
+            document.getElementById("mes1").innerHTML =
+                "<h3>MENU</h3><ul><li>Prawns-----600/-</li><br><li>Octopus-----300/-</li><br><li>Crabs-----500/-</br></li><br><li>Cat Fish-----700/-</li><br><li>Cray Fish---1500/-</li><br><li>Shrimp-----400/-</li><br><li>Tuna----200/-</li><br><li>Squid----800/-</li><br></ul>";
+
+        }
+        function openNav1() {
+            document.getElementById("mySidepanel1").style.width = "250px";
+
+        }
+        function closeNav1() {
+            document.getElementById("mySidepanel1").style.width = "0";
+        }
+    </script>
+</head>
+
+<body>
+    <div style="display: inline-flex;flex-direction: row;">
+
+        <button class="button" style="margin-top:130px" onclick="openNav1()">Sea Products</button>
+        <button class="c1"style="margin-top: 130px;"onclick="fun()">Sea Foods</button>
+        <div style="margin-left: 590px;color:rgb(255, 0, 144)" id="mes">
+        </div>
+    </div>
+
+    <div style="margin-left: 590px;font-size: 27px;display: inline-flex;background-color: azure;" id="mes1">
+    </div>
+
+    <div id="mySidepanel1" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
+        <a href="shell.html">Shells</a>
+        <a href="pearls.html">Pearls</a>
+        <a href="salt.html">Salt</a>
+    </div>
+
+</body>
+
+</html>

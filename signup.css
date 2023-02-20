@@ -1,0 +1,45 @@
+Body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-image: url("wall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  button { 
+         background-color: #1272df; 
+         width: 50%;
+          color: orange; 
+          padding: 15px; 
+          margin: 10px 0px; 
+          border: none; 
+          cursor: pointer; 
+           } 
+   form { 
+          border: 3px solid #f1f1f1; 
+          margin-left: 490px;
+          margin-right: 490px;
+          border-radius: 10px;
+      } 
+   input[type=text], input[type=password] ,input[type=email]{ 
+          width: 60%; 
+          margin: 10px 0;
+          padding: 15px 30px; 
+          display: inline-block; 
+          border: 2px solid green; 
+          border-radius: 10px;
+          box-sizing: border-box; 
+      }
+   button:hover { 
+          opacity: 0.7; 
+      } 
+    .cancelbtn { 
+          width: auto; 
+          padding: 10px 18px;
+          margin: 15px 5px;
+      } 
+        
+     
+   .container { 
+          padding: 50px; 
+          background-color: white;
+
+}
